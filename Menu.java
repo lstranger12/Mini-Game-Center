@@ -15,7 +15,7 @@ public class Menu {
     public static void userMenuLoop(){
         //
         Scanner scanner = new Scanner(System.in);
-        int userSelection = 100;
+        int userSelection = 0;
         //
         while(userSelection < 1 || userSelection > 3)
         {
