@@ -23,7 +23,7 @@ public class Menu {
             System.out.println(userSelection);
             System.out.println("-");
             System.out.println("1 - Slots");
-            System.out.println("2 - Song Guesser");
+            System.out.println("2 - Legally Distinct Word Guesser™");
             System.out.println("3 - |Exit|");
             System.out.println("-");
             //

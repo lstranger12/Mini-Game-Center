@@ -1,4 +1,3 @@
-import javax.swing.SpinnerDateModel;
 import java.util.Scanner;
 
 public class Slots {
@@ -24,12 +23,12 @@ public class Slots {
 
         while(slots == true)
         {
-            Scanner scanner = new Scanner(System.in);
+            Scanner slotInputScanner = new Scanner(System.in);
             System.out.println("1 - Spin");
             System.out.println("2 - |Exit|");
             System.out.println("3 - Stats");
             System.out.println("-");
-            int slotsInput = scanner.nextInt();
+            int slotsInput = slotInputScanner.nextInt();
             if (slotsInput == 1)
             {
                 int firstRoll = (int) (Math.random() * slotValue) + 1;
