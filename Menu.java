@@ -32,7 +32,7 @@ public class Menu {
             if (userSelection == 1){
                 Slots.startSlots();
             } else if (userSelection == 2){
-                SongGuesser.startSongGuesser();
+                WordGuesser.startWordGuesser();
             } else if (userSelection == 3){
                 System.out.println("Exiting...");
                 System.out.println("Goodbye");
