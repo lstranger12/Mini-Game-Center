@@ -6,16 +6,16 @@ public class WordGuesser {
         boolean wordGuesser = true;
         Scanner wordGuesserInputScanner = new Scanner(System.in);
 
-        String secretWord1 = "Delta";
-        String secretWord2 = "Delta";
-        String secretWord3 = "Delta";
-        String secretWord4 = "Delta";
-        String secretWord5 = "Delta";
-        String secretWord6 = "Delta";
-        String secretWord7 = "Delta";
-        String secretWord8 = "Delta";
-        String secretWord9 = "Delta";
-        String secretWord10 = "Delta";
+        String secretWord1 = "delta";
+        String secretWord2 = "parer";
+        String secretWord3 = "foyer";
+        String secretWord4 = "coyly";
+        String secretWord5 = "knoll";
+        String secretWord6 = "tryst";
+        String secretWord7 = "watch";
+        String secretWord8 = "mummy";
+        String secretWord9 = "fjord";
+        String secretWord10 = "gawky";
 
         int randomWord = (int)(Math.random() * 10) + 1;
 
@@ -78,7 +78,7 @@ public class WordGuesser {
         //------------------------------------------------------------------------------------------------------------------------------
 
         while(wordGuesser == true){
-            System.out.println("\nGuess the 5 letter word.\n+ = in the correct place\n* = in the word but not in the correct placement\n- = not in the word");
+            System.out.println("\nGuess the 5 letter word.\n+ = in the correct place\n* = in the word but not in the correct placement\n- = not in the word\nThere are NO capital letters\n");
 
             String userWordGuess = wordGuesserInputScanner.nextLine();
             String correctness = "";
@@ -90,8 +90,8 @@ public class WordGuesser {
                 for(int i = 0; i < userWordGuess.length(); i++){
                     if(userWordGuess.charAt(i) == wordToGuess.charAt(i)){
                         correctness += "+";
-                    }else if(wordToGuess.contains("" + userWordGuess.charAt(i)) == true){
-
+                    }else if(wordToGuess.contains("" + userWordGuess.charAt(i))){
+                        correctness += "*";
                     }else{
                         correctness += "-";
                     }
